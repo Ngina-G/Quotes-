@@ -6,8 +6,11 @@
       <div class="col-md-6">
         <div *ngFor='let quote of quotes;let i = index'>
           <div>
-            <h6 id={{i}}>{{quote.name}}</h6>
-            <!-- <button (click)='toggleDetails(i)' class="btn btn-primary">Toggle Details</button> -->
+            <h6>{{quote.name}}</h6>
+            <!-- <button (click)='del(i)' class="btn btn-primary">up vote</button> -->
+
+            <app-quote-detail [quote]="quote" (isComplete) = 'deleteQuote($event,i)'></app-quote-detail>
+           <!-- <button (click)='toggleDetails(i)' class="btn btn-primary">Toggle Details</button> -->
 
             <!-- <app-quote-detail  [quote]='quote' (isComplete) = 'upVoteQuote($event,i)'></app-quote-detail>
             <app-quote-detail  [quote]='quote' (isComplete) = 'downVoteQuote($event,i)'></app-quote-detail>
