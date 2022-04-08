@@ -1,3 +1,4 @@
+import { Quote } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { Quotes } from '../quotes';
 
@@ -30,6 +31,7 @@ export class QuoteComponent implements OnInit {
     }
   }
   
+
   upCount = 0;
   downCount =0;
   showCount = false;
@@ -40,9 +42,8 @@ export class QuoteComponent implements OnInit {
   }
   downVote(){
     this.showCount = true;
-    return this.downCount = this.downCount - 1;
-}
-
+    return this.downCount = this.downCount - 1; 
+  }
 
   addNewQuote(quote:any){
     let quoteLength = this.quotes.length;
