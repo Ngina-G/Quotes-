@@ -30,6 +30,24 @@ export class QuoteComponent implements OnInit {
     }
   }
 
+// myMdule (module:any){
+//    let counter = function(){
+
+//     return{
+//       scope: { model: '=ngModel'},
+//       controller: function($scope:any){
+//         $scope.upVote= function(){
+//           $scope.count++;
+//         };
+//         $scope.downVote = function(){
+//           $scope.count--;
+//         };
+//       }
+//     }
+//    };
+//    module.Directive('counter', counter);
+//  }
+
   constructor() { }
 
   ngOnInit(): void {
