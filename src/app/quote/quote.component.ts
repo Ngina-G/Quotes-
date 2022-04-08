@@ -9,16 +9,16 @@ import { Quotes } from '../quotes';
 export class QuoteComponent implements OnInit {
 
   quotes:Quotes[]= [
-    new Quotes(1, 'Wine and children speak the truth.'),
-    new Quotes(2, 'How you make your bed is how you are going to sleep.'),
-    new Quotes(3, 'Wait for the wisest of all counselors, time.'),
-    new Quotes(4, 'Wellbeing is attained by little and little, and nevertheless is no little thing itself.'),
-    new Quotes(5, 'Madness does not go to the mountains, it goes to people.'),
+    new Quotes(1, 'Wine and children speak the truth.', new Date(2020,3,14)),
+    new Quotes(2, 'How you make your bed is how you are going to sleep.', new Date(2020,3,14)),
+    new Quotes(3, 'Wait for the wisest of all counselors, time.', new Date(2020,3,14)),
+    new Quotes(4, 'Wellbeing is attained by little and little, and nevertheless is no little thing itself.', new Date(2020,3,14)),
+    new Quotes(5, 'Madness does not go to the mountains, it goes to people.', new Date(2020,3,14)),
   ];
 
-  // upVoteQuote(index: number){
-  //   this.quotes[index].upVote = !this.quotes[index].upVote;
-  // }
+  toggleDetails(index: number){
+    this.quotes[index].showDescription = !this.quotes[index].showDescription;
+  }
 
   deleteQuote(isComplete:boolean, index: number){
     if (isComplete) {
@@ -30,12 +30,12 @@ export class QuoteComponent implements OnInit {
     }
   }
 
-  count = 0;
+  upCount = 0;
   showCount = false;
 
   onShowLog(){
        this.showCount = true;
-       return this.count = this.count + 1;
+       return this.upCount = this.upCount + 1;
   }
   //   public counter : number = 0;
 

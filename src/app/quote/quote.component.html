@@ -8,20 +8,20 @@
           <div>
             <h6 id={{i}}>{{quote.name}}</h6>
             <!-- <button (click)='del(i)' class="btn btn-primary">up vote</button> -->
+              <div *ngIf='quote.showDescription'>
+                <app-quote-detail [quote]="quote" (isComplete) = 'deleteQuote($event,i)'></app-quote-detail>
 
-            <app-quote-detail [quote]="quote" (isComplete) = 'deleteQuote($event,i)'></app-quote-detail>
-
-            <button type="text" class="btn btn-primary" (click)="onShowLog()">{{ count }}</button>
-
-            <div>
-            </div>
-          </div>
+                <button type="text" class="btn btn-primary" (click)="onShowLog()">{{ upCount }}</button>
+              </div>
+          <div>
         </div>
       </div>
+    </div>
+    
+
       <div class="col-md-6">
         <!-- <app-goal-form (addGoal)="addNewGoal($event)"></app-goal-form> -->
       </div>
-    </div>
     <!-- <p *ngIf='goals.length > 5'>You have too many goals</p> -->
   </div>
   
