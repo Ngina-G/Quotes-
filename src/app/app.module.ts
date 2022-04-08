@@ -8,7 +8,11 @@ import { QuoteComponent } from './quote/quote.component';
 import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
 import { VoteDirective } from './vote.directive';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { FontAwesomeDemoComponent } from './font-awesome-demo/font-awesome-demo.component'
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
+import { CounterComponent } from './counter/counter.component';
+// import { FontAwesomeDemoComponent } from './font-awesome-demo/font-awesome-demo.component'
 
 @NgModule({
   declarations: [
@@ -17,8 +21,7 @@ import { FontAwesomeDemoComponent } from './font-awesome-demo/font-awesome-demo.
     QuoteComponent,
     QuoteDetailComponent,
     VoteDirective,
-    FontawesomeDemoComponent,
-    FontAwesomeDemoComponent
+    CounterComponent,
   ],
   imports: [
     BrowserModule,
@@ -28,4 +31,8 @@ import { FontAwesomeDemoComponent } from './font-awesome-demo/font-awesome-demo.
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+  constructor(){
+    library.add(fas, faArrowUp);
+  }
+}
