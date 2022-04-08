@@ -10,12 +10,11 @@
             <!-- <button (click)='del(i)' class="btn btn-primary">up vote</button> -->
 
             <app-quote-detail [quote]="quote" (isComplete) = 'deleteQuote($event,i)'></app-quote-detail>
+
+            <button type="text" class="btn btn-primary" (click)="onShowLog()">{{ count }}</button>
+
             <div>
             </div>
-            <!-- <app-quote-detail  [quote]='quote' (isComplete) = 'upVoteQuote($event,i)'></app-quote-detail>
-            <app-quote-detail  [quote]='quote' (isComplete) = 'downVoteQuote($event,i)'></app-quote-detail>
-            <app-quote-detail  [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-detail> -->
-
           </div>
         </div>
       </div>

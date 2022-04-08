@@ -30,6 +30,22 @@ export class QuoteComponent implements OnInit {
     }
   }
 
+  count = 0;
+  showCount = false;
+
+  onShowLog(){
+       this.showCount = true;
+       return this.count = this.count + 1;
+  }
+  //   public counter : number = 0;
+
+  // upVoteQuote(itIsComplete: boolean, index:number){
+  //   if (itIsComplete) {
+  //     this.counter += 1;
+  //     // this.quotes[index](index,this.counter)
+  //         console.log (this.counter);
+  //     }
+  //     }
 // myMdule (module:any){
 //    let counter = function(){
 

@@ -6,12 +6,13 @@ import { AppComponent } from './app.component';
 import { BannerComponent } from './banner/banner.component';
 import { QuoteComponent } from './quote/quote.component';
 import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
-import { VoteDirective } from './vote.directive';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { fas } from '@fortawesome/free-solid-svg-icons';
-import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 import { CounterComponent } from './counter/counter.component';
+import { VoteDirective } from './vote.directive';
+// import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+// import { library } from '@fortawesome/fontawesome-svg-core';
+// import { fas } from '@fortawesome/free-solid-svg-icons';
+// import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
+// import { CounterComponent } from './counter/counter.component';
 // import { FontAwesomeDemoComponent } from './font-awesome-demo/font-awesome-demo.component'
 
 @NgModule({
@@ -26,13 +27,13 @@ import { CounterComponent } from './counter/counter.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    // FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { 
   constructor(){
-    library.add(fas, faArrowUp);
+    // library.add(fas, faArrowUp);
   }
 }

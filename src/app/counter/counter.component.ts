@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, Input, EventEmitter } from '@angular/core';
 import { Quotes } from '../quotes';
 
 @Component({
@@ -8,15 +8,13 @@ import { Quotes } from '../quotes';
 })
 export class CounterComponent implements OnInit {
 
-  public counter : number = 0;
-    
-  increment(){
-    this.counter += 1;
-  }
-  
-  decrement(){
-    this.counter -= 1;
-  }
+  // @Input() quote!: Quotes;
+  // @Output() itIsComplete= new EventEmitter<boolean>();
+
+  // quoteUpVote(completed:boolean){
+  //   this.itIsComplete.emit(completed);
+  // }
+
   constructor() { }
 
   ngOnInit(): void {
