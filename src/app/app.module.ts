@@ -11,9 +11,9 @@ import { CounterComponent } from './counter/counter.component';
 import { DateCountPipe } from './date-count.pipe';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 // import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-// import { library } from '@fortawesome/fontawesome-svg-core';
-// import { fas } from '@fortawesome/free-solid-svg-icons';
-// import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 // import { CounterComponent } from './counter/counter.component';
 // import { FontAwesomeDemoComponent } from './font-awesome-demo/font-awesome-demo.component'
 
@@ -38,6 +38,6 @@ import { QuoteFormComponent } from './quote-form/quote-form.component';
 })
 export class AppModule { 
   constructor(){
-    // library.add(fas, faArrowUp);
+    library.add(fas, faArrowUp);
   }
 }
