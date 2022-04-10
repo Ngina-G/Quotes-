@@ -8,7 +8,6 @@ import { BannerComponent } from './banner/banner.component';
 import { QuoteComponent } from './quote/quote.component';
 import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
 import { CounterComponent } from './counter/counter.component';
-import { VoteDirective } from './vote.directive';
 import { DateCountPipe } from './date-count.pipe';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 // import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
@@ -24,7 +23,6 @@ import { QuoteFormComponent } from './quote-form/quote-form.component';
     BannerComponent,
     QuoteComponent,
     QuoteDetailComponent,
-    VoteDirective,
     CounterComponent,
     DateCountPipe,
     QuoteFormComponent,
