@@ -11,10 +11,8 @@ export class DateCountPipe implements PipeTransform {
     let todayVal:any = todayValLong/3600000;
 
     let todayTimeLong:any = new Date(today.getTime());
-    let todayTime:any = todayTimeLong/3600000;
-    var dateDifference = Math.floor(todayTime - todayVal) //returns value in miliseconds
-    // const secondsInDay = 86400; //60 seconds * 60 minutes in an hour * 24 hours in a day
-    // var dateCounter = dateDifferenceSeconds/secondsInDay;
+    let todayTime:any = todayTimeLong/3600000; //returns value in hours from miliseconds
+    var dateDifference = Math.floor(todayTime - todayVal) 
 
     if (dateDifference >= 1 && value > todayTime){
       return dateDifference;

@@ -1,6 +1,8 @@
 import { Quote } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { Quotes } from '../quotes';
+// import { faArrowUp, faArrowDown, fas } from '@fortawesome/free-solid-svg-icons';
+
 
 @Component({
   selector: 'app-quote',
@@ -10,11 +12,11 @@ import { Quotes } from '../quotes';
 export class QuoteComponent implements OnInit {
 
   quotes:Quotes[]= [
-    new Quotes (1, 'Wine and children speak the truth.', 'Aristotle','',new Date(2020,3,4)),
-    new Quotes (2, 'How you make your bed is how you are going to sleep.','Socrates','', new Date(2020,3,14)),
-    new Quotes (3, 'Wait for the wisest of all counselors, time.','Pilates','', new Date(2020,3,14)),
-    new Quotes (4, 'Wellbeing is attained by little and little, and nevertheless is no little thing itself.','Aristotle', '',new Date(2020,3,14)),
-    new Quotes (5, 'Madness does not go to the mountains, it goes to people.','unknown','', new Date(2020,3,14)),
+    new Quotes (1, 'Wine and children speak the truth.', 'Aristotle','editor',new Date(2022,3,4),0,0),
+    new Quotes (2, 'How you make your bed is how you are going to sleep.','Socrates','editor', new Date(2021,6,9),0,0),
+    new Quotes (3, 'Wait for the wisest of all counselors, time.','Pilates','editor', new Date(2022,1,1),0,0),
+    new Quotes (4, 'Wellbeing is attained by little and little, and nevertheless is no little thing itself.','Aristotle', 'editor',new Date(2022,2,24),0,0),
+    new Quotes (5, 'Madness does not go to the mountains, it goes to people.','unknown','editor', new Date(2021,3,14),0,0),
   ];
 
   toggleDetails(index: number){
@@ -32,17 +34,11 @@ export class QuoteComponent implements OnInit {
   }
   
 
-  upCount = 0;
-  downCount =0;
-  showCount = false;
-
-  upVote(){
-       this.showCount = true;
-       return this.upCount = this.upCount + 1;
+  upVote(index:number){
+     return this.quotes[index].upCount += 1
   }
-  downVote(){
-    this.showCount = true;
-    return this.downCount = this.downCount - 1; 
+  downVote(index:number){
+    return this.quotes[index].downCount += 1
   }
 
   addNewQuote(quote:any){
@@ -77,6 +73,10 @@ export class QuoteComponent implements OnInit {
 //    };
 //    module.Directive('counter', counter);
 //  }
+
+// fas = fas;
+// faArrowUp = faArrowUp;
+// faArrowDown = faArrowDown;
 
   constructor() { }
 
