@@ -10,6 +10,7 @@ import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
 import { CounterComponent } from './counter/counter.component';
 import { DateCountPipe } from './date-count.pipe';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
+import { HighlightDirective } from './highlight.directive';
 
 // import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
 // import { faArrowUp, faArrowDown, fas } from '@fortawesome/free-solid-svg-icons';
@@ -23,6 +24,7 @@ import { QuoteFormComponent } from './quote-form/quote-form.component';
     CounterComponent,
     DateCountPipe,
     QuoteFormComponent,
+    HighlightDirective,
   ],
   imports: [
     BrowserModule,
