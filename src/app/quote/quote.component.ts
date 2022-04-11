@@ -47,32 +47,7 @@ export class QuoteComponent implements OnInit {
     quote.completeDate = new Date(quote.completeDate)
     this.quotes.push(quote)
   }
-  //   public counter : number = 0;
 
-  // upVoteQuote(itIsComplete: boolean, index:number){
-  //   if (itIsComplete) {
-  //     this.counter += 1;
-  //     // this.quotes[index](index,this.counter)
-  //         console.log (this.counter);
-  //     }
-  //     }
-// myMdule (module:any){
-//    let counter = function(){
-
-//     return{
-//       scope: { model: '=ngModel'},
-//       controller: function($scope:any){
-//         $scope.upVote= function(){
-//           $scope.count++;
-//         };
-//         $scope.downVote = function(){
-//           $scope.count--;
-//         };
-//       }
-//     }
-//    };
-//    module.Directive('counter', counter);
-//  }
 
 // fas = fas;
 // faArrowUp = faArrowUp;

@@ -14,7 +14,19 @@ export class QuoteFormComponent implements OnInit {
   submitQuote(){
     this.addQuote.emit(this.newQuote);
   }
-  constructor() { }
+
+
+  // const nameQuote = document.querySelector("textarea");
+
+  // onTextChange(value:any)
+  // {
+    
+  //   if(this.nameQuote.f(value) <= 0;)
+  //   {
+  //     alert("Textbox is empty !!!");
+  //   }
+    
+  // }
 
   ngOnInit(): void {
   }

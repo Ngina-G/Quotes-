@@ -1,5 +1,3 @@
-import { TimeInterval } from "rxjs/internal/operators/timeInterval";
-
 export class Quotes {
     public showDetails: boolean;
 constructor(
