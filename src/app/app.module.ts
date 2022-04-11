@@ -12,8 +12,7 @@ import { DateCountPipe } from './date-count.pipe';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { HighlightDirective } from './highlight.directive';
 
-import {  FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
-import { faArrowUp, faArrowDown, fas } from '@fortawesome/free-solid-svg-icons';
+// import { faArrowUp, faArrowDown, fas } from '@fortawesome/free-solid-svg-icons';
 
 @NgModule({
   declarations: [
@@ -29,7 +28,6 @@ import { faArrowUp, faArrowDown, fas } from '@fortawesome/free-solid-svg-icons';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule,
     ReactiveFormsModule,
     FormsModule
   ],
@@ -37,9 +35,9 @@ import { faArrowUp, faArrowDown, fas } from '@fortawesome/free-solid-svg-icons';
   bootstrap: [AppComponent]
 })
 export class AppModule { 
-  constructor(library: FaIconLibrary){
-    library.addIconPacks(fas);
-    library.addIcons(faArrowUp);
-    library.addIcons(faArrowDown);
-  }
+  // constructor(library: FaIconLibrary){
+  //   library.addIconPacks(fas);
+  //   library.addIcons(faArrowUp);
+  //   library.addIcons(faArrowDown);
+  // }
 }
