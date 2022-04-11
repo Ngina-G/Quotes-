@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Input, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule ,FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
@@ -12,8 +12,8 @@ import { DateCountPipe } from './date-count.pipe';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { HighlightDirective } from './highlight.directive';
 
-// import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
-// import { faArrowUp, faArrowDown, fas } from '@fortawesome/free-solid-svg-icons';
+import {  FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
+import { faArrowUp, faArrowDown, fas } from '@fortawesome/free-solid-svg-icons';
 
 @NgModule({
   declarations: [
@@ -29,7 +29,7 @@ import { HighlightDirective } from './highlight.directive';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    // FontAwesomeModule,
+    FontAwesomeModule,
     ReactiveFormsModule,
     FormsModule
   ],
@@ -37,9 +37,9 @@ import { HighlightDirective } from './highlight.directive';
   bootstrap: [AppComponent]
 })
 export class AppModule { 
-  // constructor(library: FaIconLibrary){
-    // library.addIconPacks(fas);
-    // library.addIcons(faArrowUp);
-    // library.addIcons(faArrowDown);
+  constructor(library: FaIconLibrary){
+    library.addIconPacks(fas);
+    library.addIcons(faArrowUp);
+    library.addIcons(faArrowDown);
   }
-// }
+}

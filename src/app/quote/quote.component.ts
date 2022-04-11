@@ -1,13 +1,13 @@
 import { Quote } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { Quotes } from '../quotes';
-// import { faArrowUp, faArrowDown, fas } from '@fortawesome/free-solid-svg-icons';
+import { faArrowUp, faArrowDown, fas } from '@fortawesome/free-solid-svg-icons';
 
 
 @Component({
   selector: 'app-quote',
   templateUrl: './quote.component.html',
-  styleUrls: ['./quote.component.css']
+  styleUrls: ['./quote.component.css'],
 })
 export class QuoteComponent implements OnInit {
 
@@ -33,10 +33,13 @@ export class QuoteComponent implements OnInit {
     }
   }
   
+  // arr:number[]=this.quotes.map(element=>element.upCount);
+  // highest= Math.max(...this.arr);
 
   upVote(index:number){
-     return this.quotes[index].upCount += 1
-  }
+    return this.quotes[index].upCount += 1;
+    }
+
   downVote(index:number){
     return this.quotes[index].downCount += 1
   }
@@ -49,9 +52,9 @@ export class QuoteComponent implements OnInit {
   }
 
 
-// fas = fas;
-// faArrowUp = faArrowUp;
-// faArrowDown = faArrowDown;
+fas = fas;
+faArrowUp = faArrowUp;
+faArrowDown = faArrowDown;
 
   constructor() { }
 
@@ -59,3 +62,5 @@ export class QuoteComponent implements OnInit {
   }
 
 }
+
+
