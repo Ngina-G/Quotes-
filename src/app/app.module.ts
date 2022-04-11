@@ -11,6 +11,7 @@ import { CounterComponent } from './counter/counter.component';
 import { DateCountPipe } from './date-count.pipe';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { HighlightDirective } from './highlight.directive';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 // import { faArrowUp, faArrowDown, fas } from '@fortawesome/free-solid-svg-icons';
 
@@ -29,7 +30,8 @@ import { HighlightDirective } from './highlight.directive';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
