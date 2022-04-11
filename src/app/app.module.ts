@@ -14,6 +14,7 @@ import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
+import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 // import { CounterComponent } from './counter/counter.component';
 // import { FontAwesomeDemoComponent } from './font-awesome-demo/font-awesome-demo.component'
 
@@ -38,6 +39,6 @@ import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 })
 export class AppModule { 
   constructor(){
-    library.add(fas, faArrowUp);
+    library.add(fas, faArrowUp, faArrowDown);
   }
 }

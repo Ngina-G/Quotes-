@@ -14,8 +14,10 @@
               <div *ngIf='quote.showDetails' style="background-color: #161212;" class="rounded">
                 <app-quote-detail [quote]="quote" (isComplete) = 'deleteQuote($event,i)' ></app-quote-detail>
 
-                <button type="text"  class="btn btn-outline-success" (click)="upVote()" style="margin-left: 5%; border: 1px solid #A5AEB6; color: #fff;" id="upBtn"> {{ upCount }}</button>
-                <button type="text" class="btn btn-outline-success" (click)="downVote()" style="margin-left: 5%; border: 1px solid #F78A50; color: #fff;" id="downBtn">{{ downCount }}</button>
+                <button type="text"  class="btn btn-outline-success" (click)="upVote()" style="margin-left: 5%; border: 1px solid #A5AEB6; color: #fff;" id="upBtn">
+                  <span class="fas fa-arrow-up vote upVote">up</span> {{ upCount }}</button>
+                <button type="text" class="btn btn-outline-success" (click)="downVote()" style="margin-left: 5%; border: 1px solid #F78A50; color: #fff;" id="downBtn">
+                  <span class="fas fa-arrow-down vote upVote">up</span> {{ downCount }}</button>
 
               </div>
           <div>
