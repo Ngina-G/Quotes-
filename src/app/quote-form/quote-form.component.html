@@ -28,7 +28,7 @@
         <div class="form-group">
   
             <label for="complete" style="margin-right: 8px;">Time</label>
-            <input type='time' id="complete" [(ngModel)]="newQuote.completeDate" name="completeDate" #completeDate="ngModel" required>
+            <input type='date' id="complete" [(ngModel)]="newQuote.completeDate" name="completeDate" #completeDate="ngModel" required>
             <div [hidden]="completeDate.valid || completeDate.pristine" class="alert alert-danger">
               <p>Date is required</p>
             </div>

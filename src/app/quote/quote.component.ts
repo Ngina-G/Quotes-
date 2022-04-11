@@ -10,7 +10,7 @@ import { Quotes } from '../quotes';
 export class QuoteComponent implements OnInit {
 
   quotes:Quotes[]= [
-    new Quotes (1, 'Wine and children speak the truth.', 'Aristotle','',new Date(2020,3,14)),
+    new Quotes (1, 'Wine and children speak the truth.', 'Aristotle','',new Date(2020,3,4)),
     new Quotes (2, 'How you make your bed is how you are going to sleep.','Socrates','', new Date(2020,3,14)),
     new Quotes (3, 'Wait for the wisest of all counselors, time.','Pilates','', new Date(2020,3,14)),
     new Quotes (4, 'Wellbeing is attained by little and little, and nevertheless is no little thing itself.','Aristotle', '',new Date(2020,3,14)),
